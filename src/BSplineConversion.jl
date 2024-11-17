@@ -1,5 +1,6 @@
 using BSplines
 
+export bspp
 
 function Base.convert(::Type{PP{2,T,TX}}, spl::BSplines.Spline) where {T,TX}
     t = BSplines.knots(spl.basis)
